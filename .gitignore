@@ -1,0 +1,50 @@
+# Build and publish directories
+bin/
+obj/
+publish/
+dist/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# Build results
+*.exe
+*.dll
+*.pdb
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.VC.VC.opendb
+
+# Dependencies
+packages/
+node_modules/
+
+# Temp files
+*.tmp
+*.temp
+*.log
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+*.vscode

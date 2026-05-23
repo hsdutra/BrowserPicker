@@ -1,0 +1,45 @@
+<Window
+    x:Class="BrowserPicker.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Sobre BrowserPicker">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />    <!-- Área de drag / title bar -->
+            <RowDefinition Height="Auto" />  <!-- Header -->
+            <RowDefinition Height="*" />     <!-- Descrição -->
+            <RowDefinition Height="Auto" />  <!-- Botão -->
+            <RowDefinition Height="24" />    <!-- Padding inferior -->
+        </Grid.RowDefinitions>
+
+        <!-- Área de arrastar (substitui a title bar padrão) -->
+        <Border x:Name="TitleBarArea" Grid.Row="0" Background="Transparent" />
+
+        <!-- Header -->
+        <StackPanel Grid.Row="1" Margin="28,0,28,0" Spacing="2">
+            <TextBlock Text="BrowserPicker"
+                       FontSize="22"
+                       FontWeight="SemiBold" />
+            <TextBlock Text="Versão 1.0"
+                       FontSize="12"
+                       Opacity="0.55" />
+        </StackPanel>
+
+        <!-- Descrição -->
+        <TextBlock Grid.Row="2"
+                   Margin="28,16,28,0"
+                   Text="Intercepta links do sistema (Outlook, Teams, etc.) e permite escolher em qual browser abrir cada link."
+                   TextWrapping="Wrap"
+                   FontSize="13"
+                   Opacity="0.85" />
+
+        <!-- Botão Fechar -->
+        <Button Grid.Row="3"
+                Content="Fechar"
+                HorizontalAlignment="Right"
+                Margin="0,20,28,0"
+                Click="CloseButton_Click" />
+    </Grid>
+
+</Window>
